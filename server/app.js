@@ -2,6 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv').config();
 const mongoose = require('mongoose');
+const Users = require('./models/users');
+const Jobs = require('./models/jobs');
+
+console.log(Users);
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
