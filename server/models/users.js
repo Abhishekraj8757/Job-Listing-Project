@@ -8,4 +8,5 @@ const userSchema = new mongoose.Schema({
     mobileNumber : {type : String}
 })
 
-module.exports.userModel = mongoose.model('Users',userSchema);
+const userModel = mongoose.model('Users',userSchema);
+module.exports = userModel;
